@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOTDiffusion Virtual Try-On</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        .tryon-panel {
+            display: grid;
+            gap: 14px;
+        }
+
+        #loadingText {
+            display: none;
+            font-weight: 700;
+        }
+
+        #resultImage {
+            display: none;
+            width: min(100%, 420px);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tryon-panel">
+        <label for="userPhoto">Upload your selfie</label>
+        <input type="file" id="userPhoto" name="user_photo" accept="image/jpeg,image/png,image/webp">
+
+        <!-- Replace 1 and Upper-body with values from your product card/detail page. -->
+        <button type="button" onclick="startVirtualTryOn(1, 'Upper-body')">Start Virtual Try-On</button>
+
+        <p id="loadingText">Generating virtual try-on preview...</p>
+        <p id="tryonMessage" aria-live="polite"></p>
+        <img id="resultImage" alt="Virtual try-on result">
+    </div>
+
+    <script>
+        async function startVirtualTryOn(productId, category) {
+            const fileInput = document.getElementById('userPhoto');
+            const loadingText = document.getElementById('loadingText');
+            const message = document.getElementById('tryonMessage');
+            const resultImage = document.getElementById('resultImage');
+            const allowedCategories = ['Upper-body', 'Lower-body', 'Dress'];
+
+            if (!fileInput.files || fileInput.files.length === 0) {
+                message.textContent = 'Please upload your selfie first.';
+                return;
+            }
+
+            if (!allowedCategories.includes(category)) {
+                message.textContent = 'Please choose a valid product category.';
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('user_photo', fileInput.files[0]);
+            formData.append('product_id', productId);
+            formData.append('category', category);
+
+            loadingText.style.display = 'block';
+            message.textContent = '';
+            resultImage.style.display = 'none';
+
+            try {
+                const response = await fetch('../tryon_process.php', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (!response.ok || !data.success) {
+                    throw new Error(data.message || 'Virtual try-on failed.');
+                }
+
+                resultImage.src = data.image_url || data.generated_image;
+                resultImage.style.display = 'block';
+                message.textContent = data.message || 'Done.';
+            } catch (error) {
+                message.textContent = error.message;
+            } finally {
+                loadingText.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

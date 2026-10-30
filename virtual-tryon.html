@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Virtual Try-On | FashionAI</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/virtual-tryon.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--=====================================
+                HEADER
+======================================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-shirt"></i>
+
+            <h2>FashionAI</h2>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="virtual-tryon.html" class="active">Virtual Try-On</a></li>
+
+            <li><a href="ai-assistant.html">AI Assistant</a></li>
+
+            <li><a href="wishlist.html">Wishlist</a></li>
+
+            <li><a href="cart.html">Cart</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <i class="fa-regular fa-heart"></i>
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <i class="fa-regular fa-user"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!--=====================================
+                HERO
+======================================-->
+
+<section class="tryon-hero">
+
+    <span class="hero-tag">
+
+        🤖 AI Powered Fashion Experience
+
+    </span>
+
+    <h1>
+
+        Virtual Try-On
+
+    </h1>
+
+    <p>
+
+        Upload your photo and your favourite outfit.
+        FashionAI will generate a virtual try-on preview
+        and recommend matching fashion accessories.
+
+    </p>
+
+</section>
+
+
+
+<!--=====================================
+            BREADCRUMB
+======================================-->
+
+<section class="breadcrumb">
+
+    <a href="home.html">Home</a>
+
+    <span>></span>
+
+    <span>Virtual Try-On</span>
+
+</section>
+
+
+
+<!--=====================================
+        VIRTUAL TRY-ON
+======================================-->
+
+<section class="tryon-section">
+
+<div class="tryon-container">
+
+
+
+<!--=====================================
+        UPLOAD USER PHOTO
+======================================-->
+
+<div class="upload-card">
+
+    <div class="upload-icon">
+
+        <i class="fa-solid fa-user"></i>
+
+    </div>
+
+    <h2>Your Photo</h2>
+
+    <p>
+
+        Upload a full-body image for the best AI try-on result.
+
+    </p>
+
+    <img
+
+        id="userPreview"
+
+        src="images/default-user.png"
+
+        alt="User Preview"
+
+        class="preview-image">
+
+    <input
+
+        type="file"
+
+        id="userImage"
+
+        accept="image/*"
+
+        hidden>
+
+    <label
+
+        for="userImage"
+
+        class="upload-btn">
+
+        <i class="fa-solid fa-upload"></i>
+
+        Upload Photo
+
+    </label>
+
+</div>
+
+
+
+<!--=====================================
+        UPLOAD OUTFIT
+======================================-->
+
+<div class="upload-card">
+
+    <div class="upload-icon">
+
+        <i class="fa-solid fa-shirt"></i>
+
+    </div>
+
+    <h2>Clothing Image</h2>
+
+    <p>
+
+        Upload the dress or outfit you want to try.
+
+    </p>
+
+    <img
+
+        id="clothPreview"
+
+        src="images/default-dress.png"
+
+        alt="Dress Preview"
+
+        class="preview-image">
+
+    <input
+
+        type="file"
+
+        id="clothImage"
+
+        accept="image/*"
+
+        hidden>
+
+    <label
+
+        for="clothImage"
+
+        class="upload-btn">
+
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+        Upload Outfit
+
+    </label>
+
+</div>
+
+
+
+<!--=====================================
+        AI PROCESS CARD
+======================================-->
+
+<div class="ai-card">
+
+    <div class="ai-icon">
+
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+    </div>
+
+    <h2>
+
+        AI Fashion Engine
+
+    </h2>
+
+    <p>
+
+        Our AI analyzes body posture,
+        clothing style and fashion trends
+        to create a realistic virtual try-on.
+
+    </p>
+
+    <button
+        id="generateBtn"
+        class="generate-btn">
+
+        <i class="fa-solid fa-bolt"></i>
+
+        Generate Try-On
+
+    </button>
+
+</div>
+
+</div>
+
+</section>
+<!--=====================================
+        AI PROCESSING STATUS
+======================================-->
+
+<section class="processing-section">
+
+    <div class="processing-card">
+
+        <div class="loader">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <h2>AI Processing</h2>
+
+        <p>
+
+            FashionAI is analyzing your body posture,
+            clothing style and fitting to generate a
+            realistic virtual try-on preview.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!--=====================================
+        BEFORE & AFTER COMPARISON
+======================================-->
+
+<section class="comparison-section">
+
+    <div class="section-title">
+
+        <h2>Before & After Comparison</h2>
+
+        <p>
+
+            Compare your original image with the AI generated outfit.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="comparison-container">
+
+
+
+        <!-- BEFORE -->
+
+        <div class="compare-card">
+
+            <h3>Before</h3>
+
+            <img
+
+                id="beforeImage"
+
+                src="images/default-user.png"
+
+                alt="Before Image">
+
+        </div>
+
+
+
+        <!-- AFTER -->
+
+        <div class="compare-card">
+
+            <h3>AI Try-On Result</h3>
+
+            <img
+
+                id="afterImage"
+
+                src="images/default-result.png"
+
+                alt="AI Result">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--=====================================
+        AI RESULT
+======================================-->
+
+<section class="result-section">
+
+    <div class="result-card">
+
+        <div class="result-header">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <h2>AI Fashion Analysis</h2>
+
+        </div>
+
+
+
+        <div class="result-grid">
+
+            <div class="result-box">
+
+                <h3>Match Score</h3>
+
+                <span>96%</span>
+
+            </div>
+
+
+
+            <div class="result-box">
+
+                <h3>Fit Accuracy</h3>
+
+                <span>94%</span>
+
+            </div>
+
+
+
+            <div class="result-box">
+
+                <h3>Style Rating</h3>
+
+                <span>4.9 ★</span>
+
+            </div>
+
+
+
+            <div class="result-box">
+
+                <h3>Trend Score</h3>
+
+                <span>98%</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--=====================================
+        TRY-ON ACTION BUTTONS
+======================================-->
+
+<section class="action-section">
+
+    <button class="download-btn">
+
+        <i class="fa-solid fa-download"></i>
+
+        Download Result
+
+    </button>
+
+
+
+    <button class="share-btn">
+
+        <i class="fa-solid fa-share-nodes"></i>
+
+        Share Result
+
+    </button>
+
+
+
+    <button class="retry-btn">
+
+        <i class="fa-solid fa-rotate-right"></i>
+
+        Try Another Outfit
+
+    </button>
+
+</section>
+
+
+    </div>
+
+</section>
+
+
+
+<!--=====================================
+        CUSTOMER FEEDBACK
+======================================-->
+
+<section class="testimonial-section">
+
+    <div class="section-title">
+
+        <h2>⭐ User Feedback</h2>
+
+        <p>
+
+            What users say about FashionAI Virtual Try-On.
+
+        </p>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <img src="images/users/user1.jpg" alt="User">
+
+            <h3>Priya Sharma</h3>
+
+            <p>
+
+                "The virtual try-on feature is incredibly realistic.
+                It helped me choose the perfect outfit."
+
+            </p>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="images/users/user2.jpg" alt="User">
+
+            <h3>Anjali Patil</h3>
+
+            <p>
+
+                "The AI styling suggestions are amazing.
+                Shopping has become much easier."
+
+            </p>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="images/users/user3.jpg" alt="User">
+
+            <h3>Riya Mehta</h3>
+
+            <p>
+
+                "Excellent experience. The recommendations
+                matched my style perfectly."
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--=====================================
+                FOOTER
+======================================-->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h2>FashionAI</h2>
+
+            <p>
+
+                AI Multi-Modal Fashion Assistant providing
+                smart outfit recommendations, virtual try-on
+                and personalized shopping experience.
+
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="virtual-tryon.html">Virtual Try-On</a></li>
+
+                <li><a href="ai-assistant.html">AI Assistant</a></li>
+
+                <li><a href="wishlist.html">Wishlist</a></li>
+                
+                <li><a href="cart.html">Cart</a></li>
+                
+                <li><a href="profile.html">Profile</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Support</h3>
+
+            <ul>
+
+                <li><a href="#">Help Center</a></li>
+
+                <li><a href="#">Privacy Policy</a></li>
+
+                <li><a href="#">Terms & Conditions</a></li>
+
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 FashionAI | AI Multi-Model Fashion Assistant |
+            
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!--=====================================
+        SCROLL TO TOP
+======================================-->
+
+<button id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+<!--=====================================
+            JAVASCRIPT
+======================================-->
+
+<script src="js/api.js?v=20260801-tryon"></script>
+<script src="js/virtual-tryon.js?v=20260801-tryon"></script>
+
+</body>
+
+</html>

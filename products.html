@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FashionAI | Products</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/products.css">
+
+</head>
+
+<body>
+
+<!--=========================================
+                HEADER
+==========================================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-shirt"></i>
+
+            <h2>FashionAI</h2>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="products.html" class="active">Products</a></li>
+
+            <li><a href="virtual-tryon.html">Virtual Try-On</a></li>
+
+            <li><a href="ai-assistant.html">AI Assistant</a></li>
+
+            <li><a href="wishlist.html">Wishlist</a></li>
+
+            <li><a href="cart.html">Cart</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <i class="fa-solid fa-user"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!--=========================================
+            PRODUCTS HERO
+==========================================-->
+
+<section class="products-hero">
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+
+            ✨ AI Fashion Collection
+
+        </span>
+
+        <h1>
+
+            Explore Trending Fashion Products
+
+        </h1>
+
+        <p>
+
+            Browse thousands of fashion products recommended
+            by Artificial Intelligence according to your
+            preferences and latest fashion trends.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!--=========================================
+            BREADCRUMB
+==========================================-->
+
+<section class="breadcrumb">
+
+    <a href="home.html">
+
+        Home
+
+    </a>
+
+    <span>
+
+        >
+
+    </span>
+
+    <a href="products.html">
+
+        Products
+
+    </a>
+
+</section>
+
+
+
+<!--=========================================
+            SEARCH & TOOLBAR
+==========================================-->
+
+<section class="toolbar">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+        type="text"
+        id="searchProduct"
+        placeholder="Search Fashion Products...">
+
+    </div>
+
+    <div class="toolbar-right">
+
+        <select id="sortProducts">
+
+            <option>Sort By</option>
+
+            <option>Price : Low to High</option>
+
+            <option>Price : High to Low</option>
+
+            <option>Newest</option>
+
+            <option>Popularity</option>
+
+        </select>
+
+    </div>
+
+</section>
+
+
+
+<!--=========================================
+            PRODUCTS CONTAINER
+==========================================-->
+
+<section class="products-container">
+
+    <!--==========================
+            SIDEBAR
+    ===========================-->
+
+    <aside class="sidebar">
+
+        <h2>
+
+            Filters
+
+        </h2>
+
+
+        <!-- Category -->
+
+        <div class="filter-box">
+
+            <h3>
+
+                Categories
+
+            </h3>
+
+            <label>
+
+                <input type="checkbox" value="women">
+
+                Women's Wear
+
+            </label>
+
+            <label>
+
+                <input type="checkbox" value="men">
+
+                Men's Wear
+
+            </label>
+
+            <label>
+
+                <input type="checkbox" value="kids">
+
+                Kids Wear
+
+            </label>
+
+            <label>
+
+                <input type="checkbox" value="sports">
+
+                Sports Wear
+
+            </label>
+
+         
+
+        </div>
+
+        <!-- Price -->
+
+        <div class="filter-box">
+
+            <h3>
+
+                Price Range
+
+            </h3>
+
+            <input type="range"
+                   min="100"
+                   max="5000">
+
+            <p>
+
+                ₹100 - ₹5000
+
+            </p>
+
+        </div>
+
+        <!-- Size -->
+
+        <div class="filter-box">
+
+            <h3>
+
+                Size
+
+            </h3>
+
+            <label><input type="checkbox"> XS</label>
+
+            <label><input type="checkbox"> S</label>
+
+            <label><input type="checkbox"> M</label>
+
+            <label><input type="checkbox"> L</label>
+
+            <label><input type="checkbox"> XL</label>
+
+        </div>
+
+        <!-- Color -->
+
+        <div class="filter-box">
+
+            <h3>
+
+                Color
+
+            </h3>
+
+            <label><input type="checkbox"> Black</label>
+
+            <label><input type="checkbox"> White</label>
+
+            <label><input type="checkbox"> Blue</label>
+
+            <label><input type="checkbox"> Pink</label>
+
+            <label><input type="checkbox"> Red</label>
+
+        </div>
+
+    </aside>
+
+
+
+    <!--==========================
+        PRODUCT GRID STARTS
+    ==========================-->
+
+    <div class="products-grid">
+
+                <!--==========================
+                PRODUCT 1
+        ==========================-->
+
+        <div class="product-card" data-category="men">
+
+            <span class="discount">20% OFF</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img src="images/products/tshirt.jpg" alt="Casual T-Shirt">
+
+            <h3>Casual Cotton T-Shirt</h3>
+
+            <div class="rating">
+                ★★★★☆
+                <span>(120 Reviews)</span>
+            </div>
+
+            <p class="price">
+                ₹799
+                <del>₹999</del>
+            </p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="view-btn">Quick View</button>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product-card"data-category="men">
+
+            <span class="discount">15% OFF</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img src="images/products/formal.jpg" alt="Formal Office Shirt">
+
+            <h3>Formal Office Shirt</h3>
+
+            <div class="rating">
+                ★★★★★
+                <span>(95 Reviews)</span>
+            </div>
+
+            <p class="price">
+                ₹1,199
+                <del>₹1,399</del>
+            </p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="view-btn">Quick View</button>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product-card"data-category="women">
+
+            <span class="discount">30% OFF</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img src="images/products/floral.jpg" alt="Women's Dress">
+
+            <h3>Floral Summer Dress</h3>
+
+            <div class="rating">
+                ★★★★★
+                <span>(160 Reviews)</span>
+            </div>
+
+            <p class="price">
+                ₹1,499
+                <del>₹2,099</del>
+            </p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="view-btn">Quick View</button>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product-card"data-category="women">
+
+            <span class="discount">25% OFF</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img src="images/products/denimbaggii.jpg" alt="jeans">
+
+            <h3>Blue Denim Baggii</h3>
+
+            <div class="rating">
+                ★★★★☆
+                <span>(88 Reviews)</span>
+            </div>
+
+            <p class="price">
+                ₹1,099
+                <del>₹1,499</del>
+            </p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="view-btn">Quick View</button>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 5 -->
+
+        <div class="product-card"data-category="women">
+
+            <span class="discount">18% OFF</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img src="images/products/designerkurti.jpg" alt="Kurti">
+
+            <h3>Designer Kurti</h3>
+
+            <div class="rating">
+                ★★★★★
+                <span>(210 Reviews)</span>
+            </div>
+
+            <p class="price">
+                ₹999
+                <del>₹1,299</del>
+            </p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="view-btn">Quick View</button>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 6 -->
+
+        <div class="product-card"data-category="men">
+
+            <span class="discount">35% OFF</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img src="images/products/hoodi.jpg" alt="Hoodie">
+
+            <h3>Oversized Hoodie</h3>
+
+            <div class="rating">
+                ★★★★★
+                <span>(175 Reviews)</span>
+            </div>
+
+            <p class="price">
+                ₹1,399
+                <del>₹2,099</del>
+            </p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="view-btn">Quick View</button>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 7 -->
+
+        <div class="product-card"data-category="women">
+
+            <span class="discount">28% OFF</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img src="images/products/silk.jpg" alt="Saree">
+
+            <h3>Silk Saree</h3>
+
+            <div class="rating">
+                ★★★★★
+                <span>(260 Reviews)</span>
+            </div>
+
+            <p class="price">
+                ₹2,499
+                <del>₹3,299</del>
+            </p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="view-btn">Quick View</button>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 8 -->
+
+        <div class="product-card"data-category="men">
+
+            <span class="discount">20% OFF</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img src="images/products/jacket.jpg" alt="Jacket">
+
+            <h3>Winter Jacket</h3>
+
+            <div class="rating">
+                ★★★★☆
+                <span>(110 Reviews)</span>
+            </div>
+
+            <p class="price">
+                ₹2,199
+                <del>₹2,799</del>
+            </p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="view-btn">Quick View</button>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 9 -->
+
+        <div class="product-card"data-category="men">
+
+            <span class="discount">12% OFF</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img src="images/products/track.jpg" alt="Sports Wear">
+
+            <h3>Sports Track Suit</h3>
+
+            <div class="rating">
+                ★★★★★
+                <span>(180 Reviews)</span>
+            </div>
+
+            <p class="price">
+                ₹1,699
+                <del>₹1,999</del>
+            </p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="view-btn">Quick View</button>
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 10-->
+
+            <div class="product-card" data-category="women">
+
+        <span class="discount">20% OFF</span>
+
+        <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="images/products/crop-top.jpg" alt="Trendy Crop Top">
+
+        <h3>Trendy Crop Top</h3>
+
+        <div class="rating">
+        ★★★★★
+        <span>(185 Reviews)</span>
+        </div>
+
+        <p class="price">
+        ₹699
+        <del>₹899</del>
+        </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 11 -->
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">18% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/short-kurti.jpg" alt="Short Printed Kurti">
+
+    <h3>Short Printed Kurti</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(145 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹899
+        <del>₹1,099</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 12-->
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">15% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/sleeves-top.jpg" alt="Puff Sleeves Top">
+
+    <h3>Puff Sleeves Top</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(165 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹799
+        <del>₹999</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 13-->
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">20% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/banarasi-saree.jpg" alt="Banarasi Silk Saree">
+
+    <h3>Banarasi Silk Saree</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(245 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹2,999
+        <del>₹3,799</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 14-->
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">20% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <!-- Save the downloaded image as images/products/tank-top.jpg -->
+    <img src="images/products/tank-top.jpg" alt="Basic Tank Top">
+
+    <h3>Basic Tank Top</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(145 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹599
+        <del>₹749</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 15-->
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">25% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/lavender-coord-set.jpg" alt="Lavender Co-Ord Set">
+
+    <h3>Lavender Co-Ord Set</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(215 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹1,499
+        <del>₹1,999</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 16-->
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">18% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/oversized-cotton-shirt.jpg" alt="Oversized Cotton Shirt">
+
+    <h3>Oversized Cotton Shirt</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(172 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹999
+        <del>₹1,299</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 17-->
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">30% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/party-anarkali.jpg" alt="Party Wear Anarkali">
+
+    <h3>Party Wear Anarkali</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(248 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹2,199
+        <del>₹3,099</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 18-->
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">20% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/chikankari-kurti.jpg" alt="Chikankari Kurti">
+
+    <h3> Chikankari Kurti</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(286 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹1,299
+        <del>₹1,699</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 18-->
+
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">20% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/denim-jacket.jpg" alt="Blue Denim Jacket">
+
+    <h3>Blue Denim Jacket</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(215 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹1,899
+        <del>₹2,399</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+
+<!-- PRODUCT 19-->
+
+
+<div class="product-card" data-category="women">
+
+    <span class="discount">25% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/high-waist-denim-shorts.jpg" alt="High Waist Denim Shorts">
+
+    <h3>High Waist Denim Shorts</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(198 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹999
+        <del>₹1,299</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+<!-- PRODUCT 20-->
+
+<div class="product-card" data-category="men">
+
+    <span class="discount">21% OFF</span>
+
+    <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="images/products/slim-fit-jeans.jpg" alt="Slim Fit Jeans">
+
+    <h3>Slim Fit Jeans</h3>
+
+    <div class="rating">
+        ★★★★★
+        <span>(192 Reviews)</span>
+    </div>
+
+    <p class="price">
+        ₹1,499
+        <del>₹1,899</del>
+    </p>
+
+    <div class="product-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="view-btn">Quick View</button>
+    </div>
+
+</div>
+
+
+
+
+    </div>
+            </div>
+
+</section>
+
+<!--=========================================
+        AI RECOMMENDED PRODUCTS
+==========================================-->
+
+<section class="ai-recommendation">
+
+    <div class="section-title">
+
+        <h2>🤖 AI Recommended For You</h2>
+
+        <p>
+            Personalized fashion recommendations based on
+            your shopping preferences and latest trends.
+        </p>
+
+    </div>
+
+    <div class="recommend-grid">
+
+        <div class="recommend-card">
+
+            <i class="fa-solid fa-shirt"></i>
+
+            <h3>Smart Casual Outfit</h3>
+
+            <p>
+                Perfect for office and casual occasions.
+            </p>
+
+            <button>View Collection</button>
+
+        </div>
+
+        <div class="recommend-card">
+
+            <i class="fa-solid fa-person-dress"></i>
+
+            <h3>Summer Collection</h3>
+
+            <p>
+                Trending dresses selected by AI.
+            </p>
+
+            <button>Explore</button>
+
+        </div>
+
+        <div class="recommend-card">
+
+            <i class="fa-solid fa-shoe-prints"></i>
+
+            <h3>Footwear Match</h3>
+
+            <p>
+                Shoes that match your selected outfits.
+            </p>
+
+            <button>View More</button>
+
+        </div>
+
+  
+    </div>
+
+</section>
+
+
+
+<!--=========================================
+            PAGINATION
+==========================================-->
+
+<section class="pagination-section">
+
+    <div class="pagination">
+
+        <button class="page-btn">
+
+            <i class="fa-solid fa-angle-left"></i>
+
+        </button>
+
+        <button class="page-btn active">
+
+            1
+
+        </button>
+
+        <button class="page-btn">
+
+            2
+
+        </button>
+
+        <button class="page-btn">
+
+            3
+
+        </button>
+
+        <button class="page-btn">
+
+            4
+
+        </button>
+
+        <button class="page-btn">
+
+            5
+
+        </button>
+
+        <button class="page-btn">
+
+            <i class="fa-solid fa-angle-right"></i>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!--=========================================
+                FOOTER
+==========================================-->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h2>FashionAI</h2>
+
+            <p>
+
+                AI-Based Multi-Modal Fashion Assistant
+                providing intelligent fashion
+                recommendations, virtual try-on,
+                and personalized shopping.
+
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+                
+                <li><a href="virtual-tryon.html">Try On</a></li>
+
+                <li><a href="ai-assistant.html">AI Assistant</a></li>
+
+                <li><a href="wishlist.html">Wishlist</a></li>
+            
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="profile.html">Profile</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>AI Services</h3>
+
+            <ul>
+
+                <li><a href="#">AI Outfit Recommendation</a></li>
+
+                <li><a href="#">Virtual Try-On</a></li>
+
+                <li><a href="#">Color Matching</a></li>
+
+                <li><a href="#">Trend Analysis</a></li>
+
+                <li><a href="#">Fashion Assistant</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 FashionAI | AI-Based Multi-Model Fashion Assistant |
+           
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!--=========================================
+        SCROLL TO TOP BUTTON
+==========================================-->
+
+<button id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+<!--=========================================
+            JAVASCRIPT
+==========================================-->
+
+<script src="js/api.js"></script>
+<script src="js/products.js"></script>
+
+</body>
+
+</html>

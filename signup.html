@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>FashionAI | Create Account</title>
+
+
+
+<!-- Google Font -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+<link rel="stylesheet" href="css/signup.css">
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="signup-page">
+
+
+
+<!-- LEFT IMAGE AREA -->
+
+
+<div class="signup-left">
+
+
+<div class="signup-logo">
+
+
+<i class="fa-solid fa-shirt"></i>
+
+
+<h1>
+
+FashionAI
+
+</h1>
+
+
+</div>
+
+
+
+
+<h2>
+
+Create Your AI Fashion Profile
+
+</h2>
+
+
+
+<p>
+
+Join FashionAI and discover personalized outfits,
+virtual try-on and smart fashion recommendations.
+
+</p>
+
+
+
+
+<div class="features-list">
+
+
+<div>
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+AI Outfit Generator
+
+</div>
+
+
+
+
+<div>
+
+<i class="fa-solid fa-camera"></i>
+
+Virtual Try-On
+
+</div>
+
+
+
+
+
+<div>
+
+<i class="fa-solid fa-chart-line"></i>
+
+Fashion Trends
+
+</div>
+
+
+
+
+<div>
+
+<i class="fa-solid fa-user-gear"></i>
+
+Personal Style Profile
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- SIGNUP FORM -->
+
+
+<div class="signup-right">
+
+
+<div class="signup-box">
+
+
+
+<h2>
+
+Create Account
+
+</h2>
+
+
+
+<p>
+
+Start your AI fashion journey
+
+</p>
+
+
+
+
+<form id="registerForm">
+
+
+
+<div class="input-group">
+
+
+<i class="fa-solid fa-user"></i>
+
+
+<input 
+type="text"
+id="fullname"
+placeholder="Full Name"
+required>
+
+
+</div>
+
+
+
+
+
+<div class="input-group">
+
+
+<i class="fa-solid fa-envelope"></i>
+
+
+<input 
+type="email"
+id="email"
+placeholder="Email Address"
+required>
+
+
+</div>
+
+
+
+
+
+
+<div class="input-group">
+
+
+<i class="fa-solid fa-phone"></i>
+
+
+<input 
+type="tel"
+id="phone"
+placeholder="Mobile Number"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-group">
+
+
+<i class="fa-solid fa-lock"></i>
+
+
+<input 
+type="password"
+id="password"
+placeholder="Create Password"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-group">
+
+
+<i class="fa-solid fa-lock"></i>
+
+
+<input 
+type="password"
+id="confirmPassword"
+placeholder="Confirm Password"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="terms">
+
+
+<input type="checkbox" id="terms">
+
+
+<span>
+
+I agree with Terms & Conditions
+
+</span>
+
+
+</div>
+
+
+
+
+
+
+<input type="hidden" id="username">
+<input type="hidden" id="gender" value="Other">
+<input type="hidden" id="dob" value="2000-01-01">
+
+<button class="signup-submit" type="submit">
+
+
+Create Account
+
+
+</button>
+
+
+
+
+
+
+
+<div class="or">
+
+
+OR
+
+
+</div>
+
+
+
+
+
+
+
+<button class="google-signup" type="button" id="googleSignup">
+
+
+<i class="fa-brands fa-google"></i>
+
+
+Sign Up With Google
+
+
+</button>
+
+
+
+
+
+
+
+
+<p class="login-text">
+
+
+Already have an account?
+
+
+<a href="login.html">
+
+Login
+
+</a>
+
+
+</p>
+
+
+
+
+</form>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+<script src="js/api.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const fullname = document.getElementById("fullname");
+    const username = document.getElementById("username");
+
+    if(fullname && username){
+        fullname.addEventListener("input", () => {
+            username.value = fullname.value.trim().toLowerCase().replace(/[^a-z0-9]+/g, "").slice(0, 40);
+        });
+    }
+});
+</script>
+<script src="js/register.js"></script>
+
+</body>
+
+
+</html>

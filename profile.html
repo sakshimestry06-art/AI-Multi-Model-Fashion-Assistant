@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | FashionAI</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/profile.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--=====================================
+                HEADER
+======================================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-shirt"></i>
+
+            <h2>FashionAI</h2>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="virtual-tryon.html">Virtual Try-On</a></li>
+
+            <li><a href="ai-assistant.html">AI Assistant</a></li>
+
+            <li><a href="wishlist.html">Wishlist</a></li>
+
+            <li><a href="cart.html">Cart</a></li>
+
+            <li><a href="profile.html" class="active">Profile</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <i class="fa-regular fa-user"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!--=====================================
+                HERO SECTION
+======================================-->
+
+<section class="profile-hero">
+
+    <div class="hero-content">
+
+        <span>👤 My Fashion Profile</span>
+
+        <h1>Welcome Back</h1>
+
+        <p>
+
+            Manage your account, view your shopping activity,
+            update personal information, and customize your
+            FashionAI experience.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--=====================================
+                BREADCRUMB
+======================================-->
+
+<section class="breadcrumb">
+
+    <a href="home.html">Home</a>
+
+    <span>></span>
+
+    <span>Profile</span>
+
+</section>
+
+<!--=====================================
+            PROFILE SECTION
+======================================-->
+
+<section class="profile-section">
+
+    <div class="profile-container">
+
+        <!-- Profile Card -->
+
+        <div class="profile-card">
+
+            <img src="images/profile/profile.jpg"
+                alt="Profile">
+
+            <h2>Sakshi Mestry</h2>
+
+            <p>sakshimestry06@.com</p>
+
+            <button class="edit-btn">
+
+                <i class="fa-solid fa-pen"></i>
+
+                Edit Profile
+
+            </button>
+
+        </div>
+
+        <!-- Profile Details -->
+
+        <div class="profile-details">
+
+            <h2>Personal Information</h2>
+
+            <form>
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <input type="text"
+                        value="Sakshi Mestry">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Email Address</label>
+
+                    <input type="email"
+                        value="sakshimestry06@gmail.com">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Phone Number</label>
+
+                    <input type="text"
+                        value="+91 8788447176">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Location</label>
+
+                    <input type="text"
+                        value="Maharashtra, India">
+
+                </div>
+
+                <button class="save-btn" type="button">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Changes
+
+                </button>
+
+            </form>
+
+        </div>
+                <!--=====================================
+                DASHBOARD CARDS
+        ======================================-->
+
+        <div class="dashboard-grid">
+
+            <!-- Order History -->
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-box"></i>
+
+                <h3>My Orders</h3>
+
+                <p>12 Orders</p>
+
+                <small>Last Order: 10 July 2026</small>
+
+            </div>
+
+            <!-- Wishlist -->
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <h3>Wishlist</h3>
+
+                <p>6 Saved Items</p>
+
+                <small>Your favourite products</small>
+
+            </div>
+
+            <!-- Cart -->
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <h3>Shopping Cart</h3>
+
+                <p>3 Items</p>
+
+                <small>Ready for checkout</small>
+
+            </div>
+
+            <!-- AI Preferences -->
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <h3>AI Preferences</h3>
+
+                <p>Women's Fashion</p>
+
+                <small>Recommended for you</small>
+
+            </div>
+
+        </div>
+
+
+
+        <!--=====================================
+                ORDER HISTORY
+        ======================================-->
+
+        <div class="order-history">
+
+            <h2>Recent Orders</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Order ID</th>
+
+                        <th>Product</th>
+
+                        <th>Date</th>
+
+                        <th>Status</th>
+
+                        <th>Amount</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#FA1001</td>
+
+                        <td>Elegant Floral Dress</td>
+
+                        <td>10 Jul 2026</td>
+
+                        <td><span class="delivered">Delivered</span></td>
+
+                        <td>₹1299</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#FA1002</td>
+
+                        <td>Premium Men's Shirt</td>
+
+                        <td>05 Jul 2026</td>
+
+                        <td><span class="shipped">Shipped</span></td>
+
+                        <td>₹999</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#FA1003</td>
+
+                        <td>Casual Summer Top</td>
+
+                        <td>28 Jun 2026</td>
+
+                        <td><span class="processing">Processing</span></td>
+
+                        <td>₹799</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <!--=====================================
+                AI FASHION PREFERENCES
+        ======================================-->
+
+        <div class="preferences">
+
+            <h2>AI Fashion Preferences</h2>
+
+            <div class="preferences-grid">
+
+                <div class="preference-box">
+
+                    <h4>Favourite Category</h4>
+
+                    <p>Women's Wear</p>
+
+                </div>
+
+                <div class="preference-box">
+
+                    <h4>Preferred Colour</h4>
+
+                    <p>Lavender</p>
+
+                </div>
+
+                <div class="preference-box">
+
+                    <h4>Preferred Size</h4>
+
+                    <p>Medium (M)</p>
+
+                </div>
+
+                <div class="preference-box">
+
+                    <h4>Shopping Style</h4>
+
+                    <p>Casual & Traditional</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--=====================================
+                ACCOUNT SETTINGS
+        ======================================-->
+
+        <div class="account-settings">
+
+            <h2>Account Settings</h2>
+
+            <button class="setting-btn">
+
+                <i class="fa-solid fa-key"></i>
+
+                Change Password
+
+            </button>
+
+            <button class="setting-btn">
+
+                <i class="fa-solid fa-bell"></i>
+
+                Notification Settings
+
+            </button>
+
+            <button class="setting-btn">
+
+                <i class="fa-solid fa-moon"></i>
+
+                Dark Mode
+
+            </button>
+
+            <button class="logout-btn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=====================================
+                FOOTER
+======================================-->
+
+<footer>
+
+    <div class="footer-container">
+
+        <!-- About -->
+
+        <div class="footer-column">
+
+            <h2>FashionAI</h2>
+
+            <p>
+
+                AI-powered Fashion Assistant providing smart outfit
+                recommendations, virtual try-on, personalized shopping,
+                wishlist management, and seamless fashion experience.
+
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="virtual-tryon.html">Virtual Try-On</a></li>
+
+                <li><a href="ai-assistant.html">AI Assistant</a></li>
+
+                <li><a href="wishlist.html">Wishlist</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="profile.html">Profile</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Support -->
+
+        <div class="footer-column">
+
+            <h3>Support</h3>
+
+            <ul>
+
+                <li><a href="#">Help Center</a></li>
+
+                <li><a href="#">Privacy Policy</a></li>
+
+                <li><a href="#">Terms & Conditions</a></li>
+
+                <li><a href="#">FAQs</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Social -->
+
+        <div class="footer-column">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 FashionAI | AI Multi-Model Fashion Assistant |
+            
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!--=====================================
+            SCROLL TO TOP
+======================================-->
+
+<button id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!--=====================================
+            JAVASCRIPT
+======================================-->
+
+<script src="js/api.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>
