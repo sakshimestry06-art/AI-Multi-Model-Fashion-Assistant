@@ -1,0 +1,12 @@
+{
+  "name": "ai-multi-model-fashion-assistant",
+  "version": "1.0.0",
+  "description": "FashionAI | AI Multi-Model Fashion Assistant",
+  "main": "Frontend/index.html",
+  "scripts": {
+    "dev": "vite Frontend"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
+  }
+}
