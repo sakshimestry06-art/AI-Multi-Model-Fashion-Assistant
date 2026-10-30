@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart | FashionAI</title>
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/cart.css">
+
+
+<!-- Google Font -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<!--=====================================
+                HEADER
+======================================-->
+
+
+<header>
+
+<nav class="navbar">
+
+
+<div class="logo">
+
+<i class="fa-solid fa-shirt"></i>
+
+<h2>FashionAI</h2>
+
+</div>
+
+
+
+<ul class="nav-links">
+
+<li>
+<a href="home.html">Home</a>
+</li>
+
+
+<li>
+<a href="products.html">Products</a>
+</li>
+
+
+<li>
+<a href="virtual-tryon.html">Virtual Try-On</a>
+</li>
+
+
+<li>
+<a href="ai-assistant.html">AI Assistant</a>
+</li>
+
+
+<li>
+<a href="wishlist.html">Wishlist</a>
+</li>
+
+
+<li>
+<a href="cart.html" class="active">Cart</a>
+</li>
+
+
+<li>
+<a href="profile.html">Profile</a>
+</li>
+
+
+</ul>
+
+
+
+<div class="nav-icons">
+
+
+<i class="fa-regular fa-heart"></i>
+
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+
+<i class="fa-regular fa-user"></i>
+
+
+</div>
+
+
+
+</nav>
+
+</header>
+
+
+
+
+<!--=====================================
+                HERO SECTION
+======================================-->
+
+
+<section class="cart-hero">
+
+
+<div class="hero-content">
+
+
+<span>
+
+🛒 Your Shopping Bag
+
+</span>
+
+
+
+<h1>
+
+Shopping Cart
+
+</h1>
+
+
+
+<p>
+
+Review your selected fashion items and complete your purchase.
+
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!--=====================================
+                BREADCRUMB
+======================================-->
+
+
+<section class="breadcrumb">
+
+
+<a href="home.html">
+
+Home
+
+</a>
+
+
+<span>
+>
+</span>
+
+
+<span>
+
+Cart
+
+</span>
+
+
+</section>
+
+
+
+
+
+<!--=====================================
+            CART MAIN SECTION
+======================================-->
+
+
+<section class="cart-section">
+
+
+<div class="cart-container">
+
+
+
+
+
+<!--=====================================
+            CART ITEMS
+======================================-->
+
+
+
+<div id="cart-items"></div>
+
+
+
+<h2>
+
+Your Items
+
+</h2>
+
+
+
+
+<!-- PRODUCT 1 -->
+
+
+<div class="cart-card">
+
+
+
+<img src="images/products/dress1.jpg"
+alt="Product">
+
+
+
+<div class="cart-details">
+
+
+<h3>
+
+Elegant Floral Dress
+
+</h3>
+
+
+
+<p class="category">
+
+Women's Wear
+
+</p>
+
+
+
+<h4>
+
+₹1299
+
+</h4>
+
+
+
+<div class="quantity-box">
+
+
+<button class="minus">
+
+-
+
+</button>
+
+
+<input type="number"
+value="1"
+class="quantity">
+
+
+
+<button class="plus">
+
++
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<button class="remove-btn">
+
+
+<i class="fa-solid fa-trash"></i>
+
+Remove
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- PRODUCT 2 -->
+
+
+<div class="cart-card">
+
+
+
+<img src="images/products/top1.jpg"
+alt="Product">
+
+
+
+<div class="cart-details">
+
+
+<h3>
+
+Trendy Casual Top
+
+</h3>
+
+
+
+<p class="category">
+
+Women's Wear
+
+</p>
+
+
+
+<h4>
+
+₹799
+
+</h4>
+
+
+
+<div class="quantity-box">
+
+
+<button class="minus">
+
+-
+
+</button>
+
+
+<input type="number"
+value="1"
+class="quantity">
+
+
+
+<button class="plus">
+
++
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<button class="remove-btn">
+
+
+<i class="fa-solid fa-trash"></i>
+
+Remove
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<!-- PRODUCT 3 -->
+
+
+<div class="cart-card">
+
+
+
+<img src="images/products/shirt1.jpg"
+alt="Product">
+
+
+
+<div class="cart-details">
+
+
+<h3>
+
+Premium Men's Shirt
+
+</h3>
+
+
+
+<p class="category">
+
+Men's Wear
+
+</p>
+
+
+
+<h4>
+
+₹999
+
+</h4>
+
+
+
+<div class="quantity-box">
+
+
+<button class="minus">
+
+-
+
+</button>
+
+
+<input type="number"
+value="1"
+class="quantity">
+
+
+
+<button class="plus">
+
++
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<button class="remove-btn">
+
+
+<i class="fa-solid fa-trash"></i>
+
+Remove
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<!--=====================================
+            CART SUMMARY
+======================================-->
+
+
+<div class="cart-summary">
+
+
+<h2>
+
+Order Summary
+
+</h2>
+
+
+
+
+<div class="summary-row">
+
+<span>
+
+Subtotal
+
+</span>
+
+
+<span id="subtotal">
+
+₹3097
+
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="summary-row">
+
+<span>
+
+Discount
+
+</span>
+
+
+<span class="discount">
+
+- ₹300
+
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="summary-row">
+
+<span>
+
+Delivery Charges
+
+</span>
+
+
+<span class="delivery">
+
+FREE
+
+</span>
+
+
+</div>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="summary-total">
+
+
+<h3>
+
+Total Amount
+
+</h3>
+
+
+<h3 id="total">
+
+₹2797
+
+</h3>
+
+
+
+</div>
+
+
+
+
+
+<!--=====================================
+            COUPON SECTION
+======================================-->
+
+
+<div class="coupon-box">
+
+
+<h3>
+
+Apply Coupon
+
+</h3>
+
+
+
+<div class="coupon-input">
+
+
+<input
+
+type="text"
+
+id="coupon"
+
+placeholder="Enter coupon code">
+
+
+<button id="applyCoupon">
+
+Apply
+
+</button>
+
+
+</div>
+
+
+
+<p id="couponMessage">
+
+Use code FASHION10 to get discount
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+<!--=====================================
+            PAYMENT OPTIONS
+======================================-->
+
+
+
+<div class="payment-box">
+
+
+<h3>
+
+Payment Method
+
+</h3>
+
+
+
+<label>
+
+
+<input type="radio"
+name="payment"
+checked>
+
+
+UPI Payment
+
+
+</label>
+
+
+
+<label>
+
+
+<input type="radio"
+name="payment">
+
+
+Credit / Debit Card
+
+
+</label>
+
+
+
+<label>
+
+
+<input type="radio"
+name="payment">
+
+
+Cash on Delivery
+
+
+</label>
+
+
+
+</div>
+
+
+
+
+
+
+<!--=====================================
+            CHECKOUT BUTTON
+======================================-->
+
+
+
+<button class="checkout-btn">
+
+
+<i class="fa-solid fa-lock"></i>
+
+
+Proceed To Checkout
+
+
+</button>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!--=====================================
+                FOOTER
+======================================-->
+
+
+<footer>
+
+
+<div class="footer-container">
+
+
+<div class="footer-column">
+
+
+<h2>
+
+FashionAI
+
+</h2>
+
+
+<p>
+
+AI powered fashion assistant providing
+smart recommendations, virtual try-on
+and personalized shopping experience.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="footer-column">
+
+
+<h3>
+
+Quick Links
+
+</h3>
+
+
+<ul>
+
+<li>
+
+<a href="home.html">
+
+Home
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="products.html">
+
+Products
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="virtual-tryon.html">
+
+Virtual Try-On
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="wishlist.html">
+
+Wishlist
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="footer-column">
+
+
+<h3>
+
+Customer Support
+
+</h3>
+
+
+<ul>
+
+
+<li>
+
+<a href="#">
+
+Help Center
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#">
+
+Privacy Policy
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#">
+
+Terms & Conditions
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#">
+
+Contact Us
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<div class="footer-column">
+
+
+<h3>
+
+Follow Us
+
+</h3>
+
+
+
+<div class="social-icons">
+
+
+<a href="#">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+
+<a href="#">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+
+<a href="#">
+
+<i class="fab fa-x-twitter"></i>
+
+</a>
+
+
+<a href="#">
+
+<i class="fab fa-linkedin-in"></i>
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+
+© 2026 FashionAI | AI Multi-Model Fashion Assistant | 
+
+</p>
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+
+<!--=====================================
+            SCROLL TO TOP BUTTON
+======================================-->
+
+
+<button id="topBtn">
+
+
+<i class="fa-solid fa-arrow-up"></i>
+
+
+</button>
+
+
+
+
+
+
+<!--=====================================
+            JAVASCRIPT
+======================================-->
+
+
+<script src="js/api.js"></script>
+<script src="js/cart.js"></script>
+
+
+
+</body>
+
+</html>

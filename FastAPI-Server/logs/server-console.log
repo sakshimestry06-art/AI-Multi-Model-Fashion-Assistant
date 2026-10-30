@@ -1,0 +1,2 @@
+INFO:     127.0.0.1:45322 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45324 - "OPTIONS /tryon HTTP/1.1" 200 OK

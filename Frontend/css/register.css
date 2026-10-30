@@ -1,0 +1,1552 @@
+/*==================================================
+            REGISTER PAGE - GLOBAL STYLES
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:linear-gradient(135deg,#6D28D9,#9333EA,#C084FC);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow-x:hidden;
+    color:#fff;
+
+}
+
+
+
+/*==================================================
+                REGISTER PAGE
+==================================================*/
+
+.register-page{
+
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+
+}
+
+
+
+/*==================================================
+            REGISTER CONTAINER
+==================================================*/
+
+.register-container{
+
+    width:1200px;
+    max-width:100%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:20px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+}
+
+
+
+/*==================================================
+                LEFT PANEL
+==================================================*/
+
+.register-left{
+
+    padding:70px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+/*==================================================
+                BRAND
+==================================================*/
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.brand i{
+
+    font-size:38px;
+
+}
+
+.brand h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+
+
+/*==================================================
+                BADGE
+==================================================*/
+
+.badge{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.15);
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/*==================================================
+                TITLE
+==================================================*/
+
+.register-left h1{
+
+    font-size:52px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.register-left p{
+
+    color:#ECECEC;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/*==================================================
+            AI CIRCLE
+==================================================*/
+
+.ai-circle{
+
+    width:260px;
+
+    height:260px;
+
+    margin:40px auto;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+/*==================================================
+                CORE
+==================================================*/
+
+.core{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#7C3AED;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:55px;
+
+    z-index:5;
+
+    animation:pulse 2.5s infinite;
+
+}
+
+
+
+/*==================================================
+                ORBITS
+==================================================*/
+
+.orbit{
+
+    position:absolute;
+
+    border:2px dashed rgba(255,255,255,.45);
+
+    border-radius:50%;
+
+}
+
+.orbit1{
+
+    width:180px;
+
+    height:180px;
+
+    animation:rotate 10s linear infinite;
+
+}
+
+.orbit2{
+
+    width:240px;
+
+    height:240px;
+
+    animation:rotateReverse 15s linear infinite;
+
+}
+
+.orbit3{
+
+    width:300px;
+
+    height:300px;
+
+    animation:rotate 20s linear infinite;
+
+}
+
+
+
+/*==================================================
+            FEATURE LIST
+==================================================*/
+
+.feature-list{
+
+    margin-top:50px;
+
+}
+
+.feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+}
+
+.feature i{
+
+    width:35px;
+
+    height:35px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#7C3AED;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+/*==================================================
+            LEFT PANEL DECORATION
+==================================================*/
+
+.register-left::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.register-left::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+    bottom:-100px;
+
+    right:-100px;
+
+}
+
+
+
+/*==================================================
+                ANIMATIONS
+==================================================*/
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes rotateReverse{
+
+    from{
+
+        transform:rotate(360deg);
+
+    }
+
+    to{
+
+        transform:rotate(0deg);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+/*==================================================
+            RIGHT PANEL
+==================================================*/
+
+.register-right{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+
+}
+
+
+/*==================================================
+            REGISTER CARD
+==================================================*/
+
+.register-card{
+
+    width:100%;
+    max-width:500px;
+
+    background:rgba(255,255,255,.95);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.20);
+
+    color:#333;
+
+    animation:fadeIn .8s ease;
+
+}
+
+.register-card h2{
+
+    font-size:34px;
+
+    color:#7C3AED;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.register-card p{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:35px;
+
+    font-size:15px;
+
+}
+
+
+
+/*==================================================
+                FORM
+==================================================*/
+
+#registerForm{
+
+    width:100%;
+
+}
+
+
+
+/*==================================================
+            INPUT BOX
+==================================================*/
+
+.input-box{
+
+    margin-bottom:22px;
+
+}
+
+.input-box label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+}
+
+
+
+/*==================================================
+            INPUT FIELD
+==================================================*/
+
+.input-field{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#F4F4F4;
+
+    border:2px solid transparent;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.input-field:hover{
+
+    border-color:#C084FC;
+
+}
+
+.input-field:focus-within{
+
+    border-color:#7C3AED;
+
+    box-shadow:0 0 15px rgba(124,58,237,.20);
+
+}
+
+
+
+/*==================================================
+                ICONS
+==================================================*/
+
+.input-field i{
+
+    width:55px;
+
+    text-align:center;
+
+    color:#7C3AED;
+
+    font-size:18px;
+
+}
+
+
+
+/*==================================================
+            INPUTS
+==================================================*/
+
+.input-field input{
+
+    flex:1;
+
+    border:none;
+
+    background:transparent;
+
+    outline:none;
+
+    padding:16px 10px;
+
+    font-size:15px;
+
+    color:#333;
+
+}
+
+.input-field input::placeholder{
+
+    color:#999;
+
+}
+
+
+
+/*==================================================
+            SELECT
+==================================================*/
+
+.input-field select{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    padding:16px 10px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    color:#444;
+
+}
+
+
+
+/*==================================================
+            DATE INPUT
+==================================================*/
+
+.input-field input[type="date"]{
+
+    cursor:pointer;
+
+}
+
+
+
+/*==================================================
+        PASSWORD TOGGLE BUTTON
+==================================================*/
+
+.input-field button{
+
+    width:55px;
+
+    border:none;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    color:#7C3AED;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.input-field button:hover{
+
+    color:#5B21B6;
+
+}
+
+
+
+/*==================================================
+            TERMS
+==================================================*/
+
+.terms{
+
+    margin-top:10px;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+    color:#555;
+
+}
+
+.terms label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+}
+
+.terms input{
+
+    accent-color:#7C3AED;
+
+    width:18px;
+
+    height:18px;
+
+}
+
+.terms a{
+
+    color:#7C3AED;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+.terms a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/*==================================================
+            INPUT ANIMATION
+==================================================*/
+
+.input-field{
+
+    position:relative;
+
+}
+
+.input-field::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:0;
+
+    height:3px;
+
+    background:linear-gradient(90deg,#7C3AED,#A855F7);
+
+    transition:.4s;
+
+}
+
+.input-field:focus-within::after{
+
+    width:100%;
+
+}
+
+
+
+/*==================================================
+            CARD ANIMATION
+==================================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+            REGISTER BUTTON
+==================================================*/
+
+.register-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#7C3AED,#A855F7);
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    margin-top:10px;
+
+}
+
+.register-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(124,58,237,.35);
+
+}
+
+
+
+/*==================================================
+                DIVIDER
+==================================================*/
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:30px 0;
+
+    position:relative;
+
+}
+
+.divider::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:40%;
+
+    height:1px;
+
+    background:#ddd;
+
+    left:0;
+
+}
+
+.divider::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:40%;
+
+    height:1px;
+
+    background:#ddd;
+
+    right:0;
+
+}
+
+.divider span{
+
+    background:#fff;
+
+    padding:0 15px;
+
+    color:#777;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+
+/*==================================================
+            SOCIAL BUTTONS
+==================================================*/
+
+.social-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px solid #E5E7EB;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-bottom:15px;
+
+}
+
+.social-btn i{
+
+    font-size:22px;
+
+}
+
+
+
+/*==================================================
+            GOOGLE BUTTON
+==================================================*/
+
+.google-btn{
+
+    color:#EA4335;
+
+}
+
+.google-btn:hover{
+
+    background:#EA4335;
+
+    color:white;
+
+    border-color:#EA4335;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(234,67,53,.30);
+
+}
+
+
+
+/*==================================================
+            GITHUB BUTTON
+==================================================*/
+
+.github-btn{
+
+    color:#24292E;
+
+}
+
+.github-btn:hover{
+
+    background:#24292E;
+
+    color:white;
+
+    border-color:#24292E;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.30);
+
+}
+
+
+
+/*==================================================
+                LOGIN LINK
+==================================================*/
+
+.login-link{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    font-size:15px;
+
+    color:#666;
+
+}
+
+.login-link a{
+
+    color:#7C3AED;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.login-link a:hover{
+
+    color:#5B21B6;
+
+    text-decoration:underline;
+
+}
+
+
+
+/*==================================================
+            BUTTON ANIMATIONS
+==================================================*/
+
+.register-btn,
+
+.social-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.register-btn::before,
+
+.social-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.18);
+
+    transition:.5s;
+
+}
+
+.register-btn:hover::before,
+
+.social-btn:hover::before{
+
+    left:100%;
+
+}
+
+
+
+/*==================================================
+            ACTIVE INPUT EFFECT
+==================================================*/
+
+.input-field.active{
+
+    border-color:#7C3AED;
+
+    box-shadow:0 0 15px rgba(124,58,237,.20);
+
+}
+
+
+
+/*==================================================
+            SMALL TRANSITIONS
+==================================================*/
+
+input,
+select,
+button,
+a{
+
+    transition:.3s ease;
+
+}
+/*==================================================
+            FLOATING BACKGROUND SHAPES
+==================================================*/
+
+.register-page::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:-120px;
+
+    left:-120px;
+
+    width:320px;
+
+    height:320px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    filter:blur(10px);
+
+    z-index:-1;
+
+}
+
+.register-page::after{
+
+    content:"";
+
+    position:fixed;
+
+    bottom:-140px;
+
+    right:-140px;
+
+    width:380px;
+
+    height:380px;
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:50%;
+
+    filter:blur(10px);
+
+    z-index:-1;
+
+}
+
+
+
+/*==================================================
+            SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F3F4F6;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#7C3AED;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#5B21B6;
+
+}
+
+
+
+/*==================================================
+            TEXT SELECTION
+==================================================*/
+
+::selection{
+
+    background:#7C3AED;
+
+    color:white;
+
+}
+
+
+
+/*==================================================
+            PLACEHOLDER
+==================================================*/
+
+input::placeholder{
+
+    color:#9CA3AF;
+
+}
+
+
+
+/*==================================================
+            FOCUS OUTLINE
+==================================================*/
+
+input:focus,
+select:focus{
+
+    outline:none;
+
+}
+
+
+
+/*==================================================
+            IMAGE SUPPORT
+==================================================*/
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(max-width:1200px){
+
+.register-container{
+
+    width:95%;
+
+}
+
+.register-left{
+
+    padding:50px;
+
+}
+
+.register-right{
+
+    padding:40px;
+
+}
+
+}
+
+
+
+@media(max-width:992px){
+
+.register-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.register-left{
+
+    text-align:center;
+
+}
+
+.feature{
+
+    justify-content:center;
+
+}
+
+.register-card{
+
+    max-width:650px;
+
+}
+
+.ai-circle{
+
+    margin:40px auto;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.register-page{
+
+    padding:30px 15px;
+
+}
+
+.register-left{
+
+    padding:40px 30px;
+
+}
+
+.register-right{
+
+    padding:30px 20px;
+
+}
+
+.register-left h1{
+
+    font-size:38px;
+
+}
+
+.register-left p{
+
+    font-size:16px;
+
+}
+
+.brand h2{
+
+    font-size:28px;
+
+}
+
+.register-card{
+
+    padding:35px 25px;
+
+}
+
+.register-card h2{
+
+    font-size:30px;
+
+}
+
+.input-field input{
+
+    font-size:14px;
+
+}
+
+.input-field select{
+
+    font-size:14px;
+
+}
+
+.social-btn{
+
+    font-size:15px;
+
+}
+
+}
+
+
+
+@media(max-width:576px){
+
+.register-left{
+
+    display:none;
+
+}
+
+.register-container{
+
+    border-radius:20px;
+
+}
+
+.register-right{
+
+    padding:20px;
+
+}
+
+.register-card{
+
+    padding:25px 20px;
+
+}
+
+.register-card h2{
+
+    font-size:26px;
+
+}
+
+.register-btn{
+
+    padding:14px;
+
+}
+
+.social-btn{
+
+    padding:14px;
+
+}
+
+.divider::before,
+
+.divider::after{
+
+    width:35%;
+
+}
+
+}
+
+
+
+@media(max-width:400px){
+
+.brand h2{
+
+    font-size:24px;
+
+}
+
+.register-card{
+
+    padding:20px 15px;
+
+}
+
+.input-field{
+
+    border-radius:10px;
+
+}
+
+.input-field i{
+
+    width:45px;
+
+}
+
+.register-btn{
+
+    font-size:15px;
+
+}
+
+.social-btn{
+
+    font-size:14px;
+
+}
+
+}
+
+
+
+/*==================================================
+            UTILITY CLASSES
+==================================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-10{
+
+    margin-top:10px;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-30{
+
+    margin-top:30px;
+
+}
+
+.mb-10{
+
+    margin-bottom:10px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mb-30{
+
+    margin-bottom:30px;
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+
+
+/*==================================================
+            SMOOTH TRANSITIONS
+==================================================*/
+
+*{
+
+    transition:
+
+        background .3s,
+
+        color .3s,
+
+        transform .3s,
+
+        box-shadow .3s,
+
+        border .3s;
+
+}

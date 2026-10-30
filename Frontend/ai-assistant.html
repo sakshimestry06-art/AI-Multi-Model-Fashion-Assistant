@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Fashion Assistant | FashionAI</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/ai-assistant.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--=====================================
+                HEADER
+======================================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-shirt"></i>
+
+            <h2>FashionAI</h2>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="virtual-tryon.html">Virtual Try-On</a></li>
+
+            <li><a href="ai-assistant.html" class="active">AI Assistant</a></li>
+
+            <li><a href="wishlist.html">Wishlist</a></li>
+
+            <li><a href="cart.html">Cart</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <i class="fa-regular fa-user"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!--=====================================
+                HERO SECTION
+======================================-->
+
+<section class="assistant-hero">
+
+    <div class="hero-content">
+
+        <span>🤖 AI Fashion Stylist</span>
+
+        <h1>Your Personal Fashion Assistant</h1>
+
+        <p>
+
+            Ask questions, receive outfit recommendations,
+            discover trending styles, upload clothing images,
+            and get personalized fashion advice powered by AI.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--=====================================
+                BREADCRUMB
+======================================-->
+
+<section class="breadcrumb">
+
+    <a href="home.html">Home</a>
+
+    <span>></span>
+
+    <span>AI Assistant</span>
+
+</section>
+
+<!--=====================================
+            AI CHAT SECTION
+======================================-->
+
+<section class="assistant-section">
+
+    <div class="assistant-container">
+
+        <!-- Left Side -->
+
+        <div class="assistant-info">
+
+            <div class="assistant-avatar">
+
+                <i class="fa-solid fa-robot"></i>
+
+            </div>
+
+            <h2>FashionAI Assistant</h2>
+
+            <p>
+
+                Your AI-powered fashion expert is ready to help you
+                with outfit ideas, color combinations, occasion-based
+                styling, and shopping recommendations.
+
+            </p>
+
+            <div class="assistant-features">
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>Smart Chat</span>
+
+                </div>
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-microphone"></i>
+
+                    <span>Voice Assistant</span>
+
+                </div>
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-camera"></i>
+
+                    <span>Image Search</span>
+
+                </div>
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    <span>AI Styling</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="chat-box">
+
+            <div class="chat-header">
+
+                <div class="bot-profile">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    <div>
+
+                        <h3>FashionAI Bot</h3>
+
+                        <small>Online</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="chat-body" id="chatBody">
+
+                <div class="bot-message">
+
+                    👋 Hello! I'm your FashionAI Assistant.
+
+                </div>
+
+                <div class="bot-message">
+
+                    Ask me anything about fashion,
+                    styling, outfits, or shopping!
+
+                </div>
+            </div>
+
+            <!--=====================================
+                    CHAT INPUT AREA
+            ======================================-->
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask FashionAI anything...">
+
+                <button id="voiceBtn" title="Voice Input">
+
+                    <i class="fa-solid fa-microphone"></i>
+
+                </button>
+
+                <label for="imageUpload"
+                       class="upload-btn"
+                       title="Upload Image">
+
+                    <i class="fa-solid fa-image"></i>
+
+                </label>
+
+                <input
+                    type="file"
+                    id="imageUpload"
+                    accept="image/*"
+                    hidden>
+
+                <button id="sendBtn" class="send-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=====================================
+        SUGGESTED QUESTIONS
+======================================-->
+
+<section class="suggestions">
+
+    <h2>Try Asking</h2>
+
+    <div class="suggestion-grid">
+
+        <button class="suggestion-btn">
+
+            👗 Suggest a party outfit
+
+        </button>
+
+        <button class="suggestion-btn">
+
+            💼 What should I wear for an interview?
+
+        </button>
+
+        <button class="suggestion-btn">
+
+            🌧️ Recommend clothes for rainy season
+
+        </button>
+
+        <button class="suggestion-btn">
+
+            💍 Best wedding guest outfit
+
+        </button>
+
+        <button class="suggestion-btn">
+
+            👕 Match this shirt with jeans
+
+        </button>
+
+        <button class="suggestion-btn">
+
+            🎨 Which colours suit me?
+
+        </button>
+
+
+        <button class="suggestion-btn">
+
+            🧥 Winter outfit ideas
+
+        </button>
+
+    </div>
+
+</section>
+<!--=====================================
+                FOOTER
+======================================-->
+
+<footer>
+
+    <div class="footer-container">
+
+        <!-- About -->
+
+        <div class="footer-column">
+
+            <h2>FashionAI</h2>
+
+            <p>
+
+                FashionAI is your AI-powered fashion assistant that helps
+                you discover outfits, receive personalized styling advice,
+                use virtual try-on, and enjoy a smarter shopping experience.
+
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="virtual-tryon.html">Virtual Try-On</a></li>
+
+                <li><a href="wishlist.html">Wishlist</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="profile.html">Profile</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Support -->
+
+        <div class="footer-column">
+
+            <h3>Support</h3>
+
+            <ul>
+
+                <li><a href="#">Help Center</a></li>
+
+                <li><a href="#">Privacy Policy</a></li>
+
+                <li><a href="#">Terms & Conditions</a></li>
+
+                <li><a href="#">FAQs</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Social Media -->
+
+        <div class="footer-column">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 FashionAI | AI Multi-Model Fashion Assistant |
+            
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!--=====================================
+            SCROLL TO TOP
+======================================-->
+
+<button id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!--=====================================
+            JAVASCRIPT
+======================================-->
+
+<script src="js/api.js?v=20260801-smart"></script>
+<script src="js/ai-assistant.js?v=20260801-smart"></script>
+
+</body>
+
+</html>
